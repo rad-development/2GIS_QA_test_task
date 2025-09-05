@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title id="head-title">report.html</title>
+      <link href="assets\style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <h1 id="title">report.html</h1>
+    <p>Report generated on 06-Sep-2025 at 00:05:40 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
+        v4.1.1</p>
+    <div id="environment-header">
+      <h2>Environment</h2>
+    </div>
+    <table id="environment"></table>
+    <!-- TEMPLATES -->
+      <template id="template_environment_row">
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </template>
+    <template id="template_results-table__body--empty">
+      <tbody class="results-table-row">
+        <tr id="not-found-message">
+          <td colspan="4">No results found. Check the filters.</th>
+        </tr>
+    </template>
+    <template id="template_results-table__tbody">
+      <tbody class="results-table-row">
+        <tr class="collapsible">
+        </tr>
+        <tr class="extras-row">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media">
+              <div class="media-container">
+                  <div class="media-container__nav--left"><</div>
+                  <div class="media-container__viewport">
+                    <img src="" />
+                    <video controls>
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">></div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log"></div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </template>
+    <!-- END TEMPLATES -->
+    <div class="summary">
+      <div class="summary__data">
+        <h2>Summary</h2>
+        <div class="additional-summary prefix">
+        </div>
+        <p class="run-count">80 tests took 00:00:39.</p>
+        <p class="filter">(Un)check the boxes to filter the results.</p>
+        <div class="summary__reload">
+          <div class="summary__reload__button hidden" onclick="location.reload()">
+            <div>There are still tests running. <br />Reload this page to get the latest results!</div>
+          </div>
+        </div>
+        <div class="summary__spacer"></div>
+        <div class="controls">
+          <div class="filters">
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed" />
+            <span class="failed">13 Failed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="passed" />
+            <span class="passed">67 Passed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="skipped" disabled/>
+            <span class="skipped">0 Skipped,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xfailed" disabled/>
+            <span class="xfailed">0 Expected failures,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xpassed" disabled/>
+            <span class="xpassed">0 Unexpected passes,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="error" disabled/>
+            <span class="error">0 Errors,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="rerun" disabled/>
+            <span class="rerun">0 Reruns</span>
+          </div>
+          <div class="collapse">
+            <button id="show_all_details">Show all details</button>&nbsp;/&nbsp;<button id="hide_all_details">Hide all details</button>
+          </div>
+        </div>
+      </div>
+      <div class="additional-summary summary">
+      </div>
+      <div class="additional-summary postfix">
+      </div>
+    </div>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable" data-column-type="result">Result</th>
+          <th class="sortable" data-column-type="testId">Test</th>
+          <th class="sortable" data-column-type="duration">Duration</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+    </table>
+  </body>
+  <footer>
+    <div id="data-container" data-jsonblob="{&#34;environment&#34;: {&#34;Python&#34;: &#34;3.13.5&#34;, &#34;Platform&#34;: &#34;Windows-10-10.0.19045-SP0&#34;, &#34;Packages&#34;: {&#34;pytest&#34;: &#34;8.4.1&#34;, &#34;pluggy&#34;: &#34;1.6.0&#34;}, &#34;Plugins&#34;: {&#34;cov&#34;: &#34;6.2.1&#34;, &#34;html&#34;: &#34;4.1.1&#34;, &#34;metadata&#34;: &#34;3.1.1&#34;, &#34;mock&#34;: &#34;3.14.1&#34;, &#34;verbose-parametrize&#34;: &#34;1.8.1&#34;, &#34;xdist&#34;: &#34;3.7.0&#34;}}, &#34;tests&#34;: {&#34;tests/access_token_test.py::test_favorites_token[valid_token-True]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/access_token_test.py::test_favorites_token[valid_token-True]&#34;, &#34;duration&#34;: &#34;488 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/access_token_test.py::test_favorites_token[valid_token-True]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;488 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/access_token_test.py::test_favorites_token[no_token-None]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/access_token_test.py::test_favorites_token[no_token-None]&#34;, &#34;duration&#34;: &#34;225 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/access_token_test.py::test_favorites_token[no_token-None]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;225 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/access_token_test.py::test_favorites_token[empty_token-]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/access_token_test.py::test_favorites_token[empty_token-]&#34;, &#34;duration&#34;: &#34;260 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/access_token_test.py::test_favorites_token[empty_token-]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;260 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/access_token_test.py::test_favorites_token[string_token-not a token]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/access_token_test.py::test_favorites_token[string_token-not a token]&#34;, &#34;duration&#34;: &#34;258 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/access_token_test.py::test_favorites_token[string_token-not a token]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;258 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/access_token_test.py::test_favorites_token[real_expired_token-real]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/access_token_test.py::test_favorites_token[real_expired_token-real]&#34;, &#34;duration&#34;: &#34;00:00:03&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/access_token_test.py::test_favorites_token[real_expired_token-real]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:03&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/colors_test.py::test_create_favorite_color[YELLOW-YELLOW]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/colors_test.py::test_create_favorite_color[YELLOW-YELLOW]&#34;, &#34;duration&#34;: &#34;487 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/colors_test.py::test_create_favorite_color[YELLOW-YELLOW]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;487 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/colors_test.py::test_create_favorite_color[GREEN-GREEN]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/colors_test.py::test_create_favorite_color[GREEN-GREEN]&#34;, &#34;duration&#34;: &#34;436 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/colors_test.py::test_create_favorite_color[GREEN-GREEN]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;436 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/colors_test.py::test_create_favorite_color[BLUE-BLUE]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/colors_test.py::test_create_favorite_color[BLUE-BLUE]&#34;, &#34;duration&#34;: &#34;436 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/colors_test.py::test_create_favorite_color[BLUE-BLUE]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;436 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/colors_test.py::test_create_favorite_color[RED-RED]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/colors_test.py::test_create_favorite_color[RED-RED]&#34;, &#34;duration&#34;: &#34;458 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/colors_test.py::test_create_favorite_color[RED-RED]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;458 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/colors_test.py::test_create_favorite_color[null value-None]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/colors_test.py::test_create_favorite_color[null value-None]&#34;, &#34;duration&#34;: &#34;450 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/colors_test.py::test_create_favorite_color[null value-None]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;450 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/colors_test.py::test_create_favorite_color[BLACK-BLACK]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/colors_test.py::test_create_favorite_color[BLACK-BLACK]&#34;, &#34;duration&#34;: &#34;463 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/colors_test.py::test_create_favorite_color[BLACK-BLACK]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;463 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/colors_test.py::test_create_favorite_color[PURPLE-PURPLE]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/colors_test.py::test_create_favorite_color[PURPLE-PURPLE]&#34;, &#34;duration&#34;: &#34;478 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/colors_test.py::test_create_favorite_color[PURPLE-PURPLE]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;478 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/colors_test.py::test_create_favorite_color[RED cyrillic-\\u041a\\u0440\\u0430\\u0441\\u043d\\u044b\\u0439]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/colors_test.py::test_create_favorite_color[RED cyrillic-\\u041a\\u0440\\u0430\\u0441\\u043d\\u044b\\u0439]&#34;, &#34;duration&#34;: &#34;442 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/colors_test.py::test_create_favorite_color[RED cyrillic-\\u041a\\u0440\\u0430\\u0441\\u043d\\u044b\\u0439]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;442 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/colors_test.py::test_create_favorite_color[RED japanese-\\u8d64]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/colors_test.py::test_create_favorite_color[RED japanese-\\u8d64]&#34;, &#34;duration&#34;: &#34;447 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/colors_test.py::test_create_favorite_color[RED japanese-\\u8d64]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;447 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/colors_test.py::test_create_favorite_color[empty color-]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/colors_test.py::test_create_favorite_color[empty color-]&#34;, &#34;duration&#34;: &#34;482 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/colors_test.py::test_create_favorite_color[empty color-]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;482 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/lat_and_lon_test.py::test_create_favorite[55.028254--181]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/lat_and_lon_test.py::test_create_favorite[55.028254--181]&#34;, &#34;duration&#34;: &#34;440 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/lat_and_lon_test.py::test_create_favorite[55.028254--181]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;440 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/lat_and_lon_test.py::test_create_favorite[55.028255--180.000001]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/lat_and_lon_test.py::test_create_favorite[55.028255--180.000001]&#34;, &#34;duration&#34;: &#34;485 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/lat_and_lon_test.py::test_create_favorite[55.028255--180.000001]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;485 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/lat_and_lon_test.py::test_create_favorite[55.028256--180]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/lat_and_lon_test.py::test_create_favorite[55.028256--180]&#34;, &#34;duration&#34;: &#34;439 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/lat_and_lon_test.py::test_create_favorite[55.028256--180]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;439 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/lat_and_lon_test.py::test_create_favorite[55.028257--179]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/lat_and_lon_test.py::test_create_favorite[55.028257--179]&#34;, &#34;duration&#34;: &#34;475 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/lat_and_lon_test.py::test_create_favorite[55.028257--179]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;475 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/lat_and_lon_test.py::test_create_favorite[55.028258-0]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/lat_and_lon_test.py::test_create_favorite[55.028258-0]&#34;, &#34;duration&#34;: &#34;435 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/lat_and_lon_test.py::test_create_favorite[55.028258-0]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;435 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/lat_and_lon_test.py::test_create_favorite[55.028259-82.91850198765432]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/lat_and_lon_test.py::test_create_favorite[55.028259-82.91850198765432]&#34;, &#34;duration&#34;: &#34;470 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/lat_and_lon_test.py::test_create_favorite[55.028259-82.91850198765432]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;470 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/lat_and_lon_test.py::test_create_favorite[55.02826-179]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/lat_and_lon_test.py::test_create_favorite[55.02826-179]&#34;, &#34;duration&#34;: &#34;440 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/lat_and_lon_test.py::test_create_favorite[55.02826-179]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;440 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/lat_and_lon_test.py::test_create_favorite[55.028261-180]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/lat_and_lon_test.py::test_create_favorite[55.028261-180]&#34;, &#34;duration&#34;: &#34;438 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/lat_and_lon_test.py::test_create_favorite[55.028261-180]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;438 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/lat_and_lon_test.py::test_create_favorite[55.028262-180.000001]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/lat_and_lon_test.py::test_create_favorite[55.028262-180.000001]&#34;, &#34;duration&#34;: &#34;446 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/lat_and_lon_test.py::test_create_favorite[55.028262-180.000001]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;446 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/lat_and_lon_test.py::test_create_favorite[55.028263-181]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/lat_and_lon_test.py::test_create_favorite[55.028263-181]&#34;, &#34;duration&#34;: &#34;501 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/lat_and_lon_test.py::test_create_favorite[55.028263-181]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;501 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/lat_and_lon_test.py::test_create_favorite[55.028264-None]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/lat_and_lon_test.py::test_create_favorite[55.028264-None]&#34;, &#34;duration&#34;: &#34;445 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/lat_and_lon_test.py::test_create_favorite[55.028264-None]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;445 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/lat_and_lon_test.py::test_create_favorite[55.028265-string]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/lat_and_lon_test.py::test_create_favorite[55.028265-string]&#34;, &#34;duration&#34;: &#34;482 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/lat_and_lon_test.py::test_create_favorite[55.028265-string]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;482 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/lat_and_lon_test.py::test_create_favorite[-91-82.918501]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/lat_and_lon_test.py::test_create_favorite[-91-82.918501]&#34;, &#34;duration&#34;: &#34;441 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/lat_and_lon_test.py::test_create_favorite[-91-82.918501]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;441 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/lat_and_lon_test.py::test_create_favorite[-90.000001-82.918502]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/lat_and_lon_test.py::test_create_favorite[-90.000001-82.918502]&#34;, &#34;duration&#34;: &#34;476 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/lat_and_lon_test.py::test_create_favorite[-90.000001-82.918502]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;476 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/lat_and_lon_test.py::test_create_favorite[-90-82.918503]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/lat_and_lon_test.py::test_create_favorite[-90-82.918503]&#34;, &#34;duration&#34;: &#34;486 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/lat_and_lon_test.py::test_create_favorite[-90-82.918503]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;486 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/lat_and_lon_test.py::test_create_favorite[-89-82.918504]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/lat_and_lon_test.py::test_create_favorite[-89-82.918504]&#34;, &#34;duration&#34;: &#34;468 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/lat_and_lon_test.py::test_create_favorite[-89-82.918504]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;468 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/lat_and_lon_test.py::test_create_favorite[0-82.918505]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/lat_and_lon_test.py::test_create_favorite[0-82.918505]&#34;, &#34;duration&#34;: &#34;466 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/lat_and_lon_test.py::test_create_favorite[0-82.918505]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;466 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/lat_and_lon_test.py::test_create_favorite[55.02825412345679-82.918506]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/lat_and_lon_test.py::test_create_favorite[55.02825412345679-82.918506]&#34;, &#34;duration&#34;: &#34;437 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/lat_and_lon_test.py::test_create_favorite[55.02825412345679-82.918506]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;437 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/lat_and_lon_test.py::test_create_favorite[89-82.918507]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/lat_and_lon_test.py::test_create_favorite[89-82.918507]&#34;, &#34;duration&#34;: &#34;483 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/lat_and_lon_test.py::test_create_favorite[89-82.918507]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;483 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/lat_and_lon_test.py::test_create_favorite[90-82.918508]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/lat_and_lon_test.py::test_create_favorite[90-82.918508]&#34;, &#34;duration&#34;: &#34;496 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/lat_and_lon_test.py::test_create_favorite[90-82.918508]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;496 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/lat_and_lon_test.py::test_create_favorite[90.000001-82.918509]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/lat_and_lon_test.py::test_create_favorite[90.000001-82.918509]&#34;, &#34;duration&#34;: &#34;471 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/lat_and_lon_test.py::test_create_favorite[90.000001-82.918509]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;471 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/lat_and_lon_test.py::test_create_favorite[91-82.91851]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/lat_and_lon_test.py::test_create_favorite[91-82.91851]&#34;, &#34;duration&#34;: &#34;510 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/lat_and_lon_test.py::test_create_favorite[91-82.91851]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;510 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/lat_and_lon_test.py::test_create_favorite[None-82.918511]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/lat_and_lon_test.py::test_create_favorite[None-82.918511]&#34;, &#34;duration&#34;: &#34;440 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/lat_and_lon_test.py::test_create_favorite[None-82.918511]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;440 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/lat_and_lon_test.py::test_create_favorite[string-82.918512]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/lat_and_lon_test.py::test_create_favorite[string-82.918512]&#34;, &#34;duration&#34;: &#34;442 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/lat_and_lon_test.py::test_create_favorite[string-82.918512]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;442 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/lat_and_lon_test.py::test_create_favorite[-91--181]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/lat_and_lon_test.py::test_create_favorite[-91--181]&#34;, &#34;duration&#34;: &#34;439 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/lat_and_lon_test.py::test_create_favorite[-91--181]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;439 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/lat_and_lon_test.py::test_create_favorite[-90.000001--180.000001]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/lat_and_lon_test.py::test_create_favorite[-90.000001--180.000001]&#34;, &#34;duration&#34;: &#34;439 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/lat_and_lon_test.py::test_create_favorite[-90.000001--180.000001]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;439 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/lat_and_lon_test.py::test_create_favorite[-90--180]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/lat_and_lon_test.py::test_create_favorite[-90--180]&#34;, &#34;duration&#34;: &#34;490 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/lat_and_lon_test.py::test_create_favorite[-90--180]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;490 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/lat_and_lon_test.py::test_create_favorite[-89--179]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/lat_and_lon_test.py::test_create_favorite[-89--179]&#34;, &#34;duration&#34;: &#34;477 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/lat_and_lon_test.py::test_create_favorite[-89--179]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;477 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/lat_and_lon_test.py::test_create_favorite[0-0]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/lat_and_lon_test.py::test_create_favorite[0-0]&#34;, &#34;duration&#34;: &#34;476 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/lat_and_lon_test.py::test_create_favorite[0-0]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;476 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;lat = 0, lon = 0\n\n&amp;gt;   ???\nE   AssertionError: Expected 200, got 500\nE   assert 500 == 200\nE    +  where 500 = &amp;lt;Response [500]&amp;gt;.status_code\n\nC:\\Users\\Radmir\\test_task_2gis\\tests\\lat_and_lon_test.py:45: AssertionError\n&#34;}], &#34;tests/lat_and_lon_test.py::test_create_favorite[55.02825412345679-82.91850198765432]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/lat_and_lon_test.py::test_create_favorite[55.02825412345679-82.91850198765432]&#34;, &#34;duration&#34;: &#34;438 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/lat_and_lon_test.py::test_create_favorite[55.02825412345679-82.91850198765432]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;438 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/lat_and_lon_test.py::test_create_favorite[89-179]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/lat_and_lon_test.py::test_create_favorite[89-179]&#34;, &#34;duration&#34;: &#34;492 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/lat_and_lon_test.py::test_create_favorite[89-179]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;492 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/lat_and_lon_test.py::test_create_favorite[90-180]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/lat_and_lon_test.py::test_create_favorite[90-180]&#34;, &#34;duration&#34;: &#34;491 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/lat_and_lon_test.py::test_create_favorite[90-180]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;491 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/lat_and_lon_test.py::test_create_favorite[90.000001-180.000001]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/lat_and_lon_test.py::test_create_favorite[90.000001-180.000001]&#34;, &#34;duration&#34;: &#34;440 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/lat_and_lon_test.py::test_create_favorite[90.000001-180.000001]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;440 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/lat_and_lon_test.py::test_create_favorite[91-181]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/lat_and_lon_test.py::test_create_favorite[91-181]&#34;, &#34;duration&#34;: &#34;488 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/lat_and_lon_test.py::test_create_favorite[91-181]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;488 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/lat_and_lon_test.py::test_create_favorite[None-None]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/lat_and_lon_test.py::test_create_favorite[None-None]&#34;, &#34;duration&#34;: &#34;443 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/lat_and_lon_test.py::test_create_favorite[None-None]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;443 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/lat_and_lon_test.py::test_create_favorite[string-string]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/lat_and_lon_test.py::test_create_favorite[string-string]&#34;, &#34;duration&#34;: &#34;438 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/lat_and_lon_test.py::test_create_favorite[string-string]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;438 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/required_fields_test.py::test_favorite_required_fields[1-0-0-0]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/required_fields_test.py::test_favorite_required_fields[1-0-0-0]&#34;, &#34;duration&#34;: &#34;442 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/required_fields_test.py::test_favorite_required_fields[1-0-0-0]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;442 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/required_fields_test.py::test_favorite_required_fields[0-0-1-1]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/required_fields_test.py::test_favorite_required_fields[0-0-1-1]&#34;, &#34;duration&#34;: &#34;443 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/required_fields_test.py::test_favorite_required_fields[0-0-1-1]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;443 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/required_fields_test.py::test_favorite_required_fields[0-1-1-0]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/required_fields_test.py::test_favorite_required_fields[0-1-1-0]&#34;, &#34;duration&#34;: &#34;470 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/required_fields_test.py::test_favorite_required_fields[0-1-1-0]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;470 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/required_fields_test.py::test_favorite_required_fields[0-1-0-1]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/required_fields_test.py::test_favorite_required_fields[0-1-0-1]&#34;, &#34;duration&#34;: &#34;477 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/required_fields_test.py::test_favorite_required_fields[0-1-0-1]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;477 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/required_fields_test.py::test_favorite_required_fields[1-1-0-1]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/required_fields_test.py::test_favorite_required_fields[1-1-0-1]&#34;, &#34;duration&#34;: &#34;439 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/required_fields_test.py::test_favorite_required_fields[1-1-0-1]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;439 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/required_fields_test.py::test_favorite_required_fields[1-1-1-0]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/required_fields_test.py::test_favorite_required_fields[1-1-1-0]&#34;, &#34;duration&#34;: &#34;439 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/required_fields_test.py::test_favorite_required_fields[1-1-1-0]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;439 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/required_fields_test.py::test_favorite_required_fields[1-0-1-1]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/required_fields_test.py::test_favorite_required_fields[1-0-1-1]&#34;, &#34;duration&#34;: &#34;439 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/required_fields_test.py::test_favorite_required_fields[1-0-1-1]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;439 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/required_fields_test.py::test_favorite_required_fields[1-1-1-1]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/required_fields_test.py::test_favorite_required_fields[1-1-1-1]&#34;, &#34;duration&#34;: &#34;493 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/required_fields_test.py::test_favorite_required_fields[1-1-1-1]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;493 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/title_test.py::test_create_favorite_title[empty title-]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/title_test.py::test_create_favorite_title[empty title-]&#34;, &#34;duration&#34;: &#34;455 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/title_test.py::test_create_favorite_title[empty title-]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;455 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/title_test.py::test_create_favorite_title[1 symbol-a]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/title_test.py::test_create_favorite_title[1 symbol-a]&#34;, &#34;duration&#34;: &#34;437 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/title_test.py::test_create_favorite_title[1 symbol-a]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;437 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/title_test.py::test_create_favorite_title[2 symbols-a3]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/title_test.py::test_create_favorite_title[2 symbols-a3]&#34;, &#34;duration&#34;: &#34;484 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/title_test.py::test_create_favorite_title[2 symbols-a3]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;484 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/title_test.py::test_create_favorite_title[arabic letters-\\u0645\\u062b\\u0627\\u0644 \\u0644\\u0644\\u0632\\u062e\\u0631\\u0641\\u0629 \\u0627\\u0644\\u0639\\u0631\\u0628\\u064a\\u0629 \\u0640\\u0640\\u0640\\u0640\\u0640\\u0640\\u0640\\u0640...]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/title_test.py::test_create_favorite_title[arabic letters-\\u0645\\u062b\\u0627\\u0644 \\u0644\\u0644\\u0632\\u062e\\u0631\\u0641\\u0629 \\u0627\\u0644\\u0639\\u0631\\u0628\\u064a\\u0629 \\u0640\\u0640\\u0640\\u0640\\u0640\\u0640\\u0640\\u0640...]&#34;, &#34;duration&#34;: &#34;444 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/title_test.py::test_create_favorite_title[arabic letters-\\u0645\\u062b\\u0627\\u0644 \\u0644\\u0644\\u0632\\u062e\\u0631\\u0641\\u0629 \\u0627\\u0644\\u0639\\u0631\\u0628\\u064a\\u0629 \\u0640\\u0640\\u0640\\u0640\\u0640\\u0640\\u0640\\u0640...]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;444 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;desc = &amp;#x27;arabic letters&amp;#x27;, title = &amp;#x27;\u0645\u062b\u0627\u0644 \u0644\u0644\u0632\u062e\u0631\u0641\u0629 \u0627\u0644\u0639\u0631\u0628\u064a\u0629 \u0640\u0640\u0640\u0640\u0640\u0640\u0640\u0640 \u0644\u0627 \u0625\u0644\u0647 \u0625\u0644\u0627 \u0627\u0644\u0644\u0647 \u060c \u0633\u064a\u062f\u0646\u0627 \u0645\u062d\u0645\u062f \u0635\u0644\u0649 \u0627\u0644\u0644\u0647 \u0639\u0644\u064a\u0647 \u0648\u0644\u0645\u0631\u0633\u0648\u0644 \u0627\u0644\u0644\u0647 \u0640\u0640\u0640\u0640\u0640\u0640\u0640 \u06db \u05bc\u0645\u067d\u0627\u06b6 \u06b5\u06b6\u0699\u0682\u0694\u06a3\u06c3 \u05bc\u0627\u06b6\u0640\u060f\u0640\u0694\u0628\u06d1\u0652\u06c3 \u0640\u0640 \u05bc\ufefb \u06d6 \u0625\u06b8\u06c1 \u06db&amp;#x27;\n\n    @pytest.mark.parametrize(&amp;quot;desc, title&amp;quot;, test_pairs)\n    def test_create_favorite_title(desc, title):\n    #    print(f&amp;quot;Testing title ({desc}): {title}&amp;quot;)  # \u0417\u0434\u0435\u0441\u044c \u0432\u0438\u0434\u043d\u043e \u043b\u044e\u0431\u044b\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u044b\n        # \u041f\u043e\u043b\u0443\u0447\u0430\u0435\u043c \u0442\u043e\u043a\u0435\u043d\n        auth_url = &amp;quot;https://regions-test.2gis.com/v1/auth/tokens&amp;quot;\n        auth_response = requests.post(auth_url)\n        token = auth_response.cookies.get(&amp;quot;token&amp;quot;)\n        if not token:\n            raise Exception(&amp;quot;\u041d\u0435 \u0443\u0434\u0430\u043b\u043e\u0441\u044c \u043f\u043e\u043b\u0443\u0447\u0438\u0442\u044c \u0441\u0435\u0441\u0441\u0438\u043e\u043d\u043d\u044b\u0439 \u0442\u043e\u043a\u0435\u043d&amp;quot;)\n    \n        favorites_url = &amp;quot;https://regions-test.2gis.com/v1/favorites&amp;quot;\n        data = {\n            &amp;quot;title&amp;quot;: title,\n            &amp;quot;lat&amp;quot;: LAT,\n            &amp;quot;lon&amp;quot;: LON\n        }\n    \n        response = requests.post(favorites_url, data=data, cookies={&amp;quot;token&amp;quot;: token})\n    \n        if is_valid_title(title):\n            assert response.status_code == 200, f&amp;quot;Expected 200, got {response.status_code} for {desc}&amp;quot;\n            json_data = response.json()\n            assert &amp;quot;id&amp;quot; in json_data and isinstance(json_data[&amp;quot;id&amp;quot;], int)\n            assert json_data[&amp;quot;title&amp;quot;] == data[&amp;quot;title&amp;quot;]\n            assert math.isclose(json_data[&amp;quot;lat&amp;quot;], data[&amp;quot;lat&amp;quot;], rel_tol=1e-6)\n            assert math.isclose(json_data[&amp;quot;lon&amp;quot;], data[&amp;quot;lon&amp;quot;], rel_tol=1e-6)\n            assert &amp;quot;created_at&amp;quot; in json_data\n        else:\n&amp;gt;           assert response.status_code == 400, f&amp;quot;Expected 400, got {response.status_code} for {desc}&amp;quot;\nE           AssertionError: Expected 400, got 200 for arabic letters\nE           assert 200 == 400\nE            +  where 200 = &amp;lt;Response [200]&amp;gt;.status_code\n\ntests\\title_test.py:64: AssertionError\n&#34;}], &#34;tests/title_test.py::test_create_favorite_title[japanese letters-\\u65e5\\u672c\\u306e\\u30d4\\u30ab\\u30c1\\u30e5\\u30a6]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/title_test.py::test_create_favorite_title[japanese letters-\\u65e5\\u672c\\u306e\\u30d4\\u30ab\\u30c1\\u30e5\\u30a6]&#34;, &#34;duration&#34;: &#34;466 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/title_test.py::test_create_favorite_title[japanese letters-\\u65e5\\u672c\\u306e\\u30d4\\u30ab\\u30c1\\u30e5\\u30a6]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;466 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;desc = &amp;#x27;japanese letters&amp;#x27;, title = &amp;#x27;\u65e5\u672c\u306e\u30d4\u30ab\u30c1\u30e5\u30a6&amp;#x27;\n\n    @pytest.mark.parametrize(&amp;quot;desc, title&amp;quot;, test_pairs)\n    def test_create_favorite_title(desc, title):\n    #    print(f&amp;quot;Testing title ({desc}): {title}&amp;quot;)  # \u0417\u0434\u0435\u0441\u044c \u0432\u0438\u0434\u043d\u043e \u043b\u044e\u0431\u044b\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u044b\n        # \u041f\u043e\u043b\u0443\u0447\u0430\u0435\u043c \u0442\u043e\u043a\u0435\u043d\n        auth_url = &amp;quot;https://regions-test.2gis.com/v1/auth/tokens&amp;quot;\n        auth_response = requests.post(auth_url)\n        token = auth_response.cookies.get(&amp;quot;token&amp;quot;)\n        if not token:\n            raise Exception(&amp;quot;\u041d\u0435 \u0443\u0434\u0430\u043b\u043e\u0441\u044c \u043f\u043e\u043b\u0443\u0447\u0438\u0442\u044c \u0441\u0435\u0441\u0441\u0438\u043e\u043d\u043d\u044b\u0439 \u0442\u043e\u043a\u0435\u043d&amp;quot;)\n    \n        favorites_url = &amp;quot;https://regions-test.2gis.com/v1/favorites&amp;quot;\n        data = {\n            &amp;quot;title&amp;quot;: title,\n            &amp;quot;lat&amp;quot;: LAT,\n            &amp;quot;lon&amp;quot;: LON\n        }\n    \n        response = requests.post(favorites_url, data=data, cookies={&amp;quot;token&amp;quot;: token})\n    \n        if is_valid_title(title):\n            assert response.status_code == 200, f&amp;quot;Expected 200, got {response.status_code} for {desc}&amp;quot;\n            json_data = response.json()\n            assert &amp;quot;id&amp;quot; in json_data and isinstance(json_data[&amp;quot;id&amp;quot;], int)\n            assert json_data[&amp;quot;title&amp;quot;] == data[&amp;quot;title&amp;quot;]\n            assert math.isclose(json_data[&amp;quot;lat&amp;quot;], data[&amp;quot;lat&amp;quot;], rel_tol=1e-6)\n            assert math.isclose(json_data[&amp;quot;lon&amp;quot;], data[&amp;quot;lon&amp;quot;], rel_tol=1e-6)\n            assert &amp;quot;created_at&amp;quot; in json_data\n        else:\n&amp;gt;           assert response.status_code == 400, f&amp;quot;Expected 400, got {response.status_code} for {desc}&amp;quot;\nE           AssertionError: Expected 400, got 200 for japanese letters\nE           assert 200 == 400\nE            +  where 200 = &amp;lt;Response [200]&amp;gt;.status_code\n\ntests\\title_test.py:64: AssertionError\n&#34;}], &#34;tests/title_test.py::test_create_favorite_title[chinese letters-\\u6c49\\u5b57\\u6e2c\\u8a66]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/title_test.py::test_create_favorite_title[chinese letters-\\u6c49\\u5b57\\u6e2c\\u8a66]&#34;, &#34;duration&#34;: &#34;439 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/title_test.py::test_create_favorite_title[chinese letters-\\u6c49\\u5b57\\u6e2c\\u8a66]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;439 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;desc = &amp;#x27;chinese letters&amp;#x27;, title = &amp;#x27;\u6c49\u5b57\u6e2c\u8a66&amp;#x27;\n\n    @pytest.mark.parametrize(&amp;quot;desc, title&amp;quot;, test_pairs)\n    def test_create_favorite_title(desc, title):\n    #    print(f&amp;quot;Testing title ({desc}): {title}&amp;quot;)  # \u0417\u0434\u0435\u0441\u044c \u0432\u0438\u0434\u043d\u043e \u043b\u044e\u0431\u044b\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u044b\n        # \u041f\u043e\u043b\u0443\u0447\u0430\u0435\u043c \u0442\u043e\u043a\u0435\u043d\n        auth_url = &amp;quot;https://regions-test.2gis.com/v1/auth/tokens&amp;quot;\n        auth_response = requests.post(auth_url)\n        token = auth_response.cookies.get(&amp;quot;token&amp;quot;)\n        if not token:\n            raise Exception(&amp;quot;\u041d\u0435 \u0443\u0434\u0430\u043b\u043e\u0441\u044c \u043f\u043e\u043b\u0443\u0447\u0438\u0442\u044c \u0441\u0435\u0441\u0441\u0438\u043e\u043d\u043d\u044b\u0439 \u0442\u043e\u043a\u0435\u043d&amp;quot;)\n    \n        favorites_url = &amp;quot;https://regions-test.2gis.com/v1/favorites&amp;quot;\n        data = {\n            &amp;quot;title&amp;quot;: title,\n            &amp;quot;lat&amp;quot;: LAT,\n            &amp;quot;lon&amp;quot;: LON\n        }\n    \n        response = requests.post(favorites_url, data=data, cookies={&amp;quot;token&amp;quot;: token})\n    \n        if is_valid_title(title):\n            assert response.status_code == 200, f&amp;quot;Expected 200, got {response.status_code} for {desc}&amp;quot;\n            json_data = response.json()\n            assert &amp;quot;id&amp;quot; in json_data and isinstance(json_data[&amp;quot;id&amp;quot;], int)\n            assert json_data[&amp;quot;title&amp;quot;] == data[&amp;quot;title&amp;quot;]\n            assert math.isclose(json_data[&amp;quot;lat&amp;quot;], data[&amp;quot;lat&amp;quot;], rel_tol=1e-6)\n            assert math.isclose(json_data[&amp;quot;lon&amp;quot;], data[&amp;quot;lon&amp;quot;], rel_tol=1e-6)\n            assert &amp;quot;created_at&amp;quot; in json_data\n        else:\n&amp;gt;           assert response.status_code == 400, f&amp;quot;Expected 400, got {response.status_code} for {desc}&amp;quot;\nE           AssertionError: Expected 400, got 200 for chinese letters\nE           assert 200 == 400\nE            +  where 200 = &amp;lt;Response [200]&amp;gt;.status_code\n\ntests\\title_test.py:64: AssertionError\n&#34;}], &#34;tests/title_test.py::test_create_favorite_title[korean letters-\\ud55c\\uae00\\ud14c\\uc2a4\\ud2b8]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/title_test.py::test_create_favorite_title[korean letters-\\ud55c\\uae00\\ud14c\\uc2a4\\ud2b8]&#34;, &#34;duration&#34;: &#34;455 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/title_test.py::test_create_favorite_title[korean letters-\\ud55c\\uae00\\ud14c\\uc2a4\\ud2b8]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;455 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;desc = &amp;#x27;korean letters&amp;#x27;, title = &amp;#x27;\ud55c\uae00\ud14c\uc2a4\ud2b8&amp;#x27;\n\n    @pytest.mark.parametrize(&amp;quot;desc, title&amp;quot;, test_pairs)\n    def test_create_favorite_title(desc, title):\n    #    print(f&amp;quot;Testing title ({desc}): {title}&amp;quot;)  # \u0417\u0434\u0435\u0441\u044c \u0432\u0438\u0434\u043d\u043e \u043b\u044e\u0431\u044b\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u044b\n        # \u041f\u043e\u043b\u0443\u0447\u0430\u0435\u043c \u0442\u043e\u043a\u0435\u043d\n        auth_url = &amp;quot;https://regions-test.2gis.com/v1/auth/tokens&amp;quot;\n        auth_response = requests.post(auth_url)\n        token = auth_response.cookies.get(&amp;quot;token&amp;quot;)\n        if not token:\n            raise Exception(&amp;quot;\u041d\u0435 \u0443\u0434\u0430\u043b\u043e\u0441\u044c \u043f\u043e\u043b\u0443\u0447\u0438\u0442\u044c \u0441\u0435\u0441\u0441\u0438\u043e\u043d\u043d\u044b\u0439 \u0442\u043e\u043a\u0435\u043d&amp;quot;)\n    \n        favorites_url = &amp;quot;https://regions-test.2gis.com/v1/favorites&amp;quot;\n        data = {\n            &amp;quot;title&amp;quot;: title,\n            &amp;quot;lat&amp;quot;: LAT,\n            &amp;quot;lon&amp;quot;: LON\n        }\n    \n        response = requests.post(favorites_url, data=data, cookies={&amp;quot;token&amp;quot;: token})\n    \n        if is_valid_title(title):\n            assert response.status_code == 200, f&amp;quot;Expected 200, got {response.status_code} for {desc}&amp;quot;\n            json_data = response.json()\n            assert &amp;quot;id&amp;quot; in json_data and isinstance(json_data[&amp;quot;id&amp;quot;], int)\n            assert json_data[&amp;quot;title&amp;quot;] == data[&amp;quot;title&amp;quot;]\n            assert math.isclose(json_data[&amp;quot;lat&amp;quot;], data[&amp;quot;lat&amp;quot;], rel_tol=1e-6)\n            assert math.isclose(json_data[&amp;quot;lon&amp;quot;], data[&amp;quot;lon&amp;quot;], rel_tol=1e-6)\n            assert &amp;quot;created_at&amp;quot; in json_data\n        else:\n&amp;gt;           assert response.status_code == 400, f&amp;quot;Expected 400, got {response.status_code} for {desc}&amp;quot;\nE           AssertionError: Expected 400, got 200 for korean letters\nE           assert 200 == 400\nE            +  where 200 = &amp;lt;Response [200]&amp;gt;.status_code\n\ntests\\title_test.py:64: AssertionError\n&#34;}], &#34;tests/title_test.py::test_create_favorite_title[hebrew letters-\\u05e9\\u05dc\\u05d5\\u05dd\\u05e2\\u05d5\\u05dc\\u05dd]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/title_test.py::test_create_favorite_title[hebrew letters-\\u05e9\\u05dc\\u05d5\\u05dd\\u05e2\\u05d5\\u05dc\\u05dd]&#34;, &#34;duration&#34;: &#34;439 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/title_test.py::test_create_favorite_title[hebrew letters-\\u05e9\\u05dc\\u05d5\\u05dd\\u05e2\\u05d5\\u05dc\\u05dd]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;439 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;desc = &amp;#x27;hebrew letters&amp;#x27;, title = &amp;#x27;\u05e9\u05dc\u05d5\u05dd\u05e2\u05d5\u05dc\u05dd&amp;#x27;\n\n    @pytest.mark.parametrize(&amp;quot;desc, title&amp;quot;, test_pairs)\n    def test_create_favorite_title(desc, title):\n    #    print(f&amp;quot;Testing title ({desc}): {title}&amp;quot;)  # \u0417\u0434\u0435\u0441\u044c \u0432\u0438\u0434\u043d\u043e \u043b\u044e\u0431\u044b\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u044b\n        # \u041f\u043e\u043b\u0443\u0447\u0430\u0435\u043c \u0442\u043e\u043a\u0435\u043d\n        auth_url = &amp;quot;https://regions-test.2gis.com/v1/auth/tokens&amp;quot;\n        auth_response = requests.post(auth_url)\n        token = auth_response.cookies.get(&amp;quot;token&amp;quot;)\n        if not token:\n            raise Exception(&amp;quot;\u041d\u0435 \u0443\u0434\u0430\u043b\u043e\u0441\u044c \u043f\u043e\u043b\u0443\u0447\u0438\u0442\u044c \u0441\u0435\u0441\u0441\u0438\u043e\u043d\u043d\u044b\u0439 \u0442\u043e\u043a\u0435\u043d&amp;quot;)\n    \n        favorites_url = &amp;quot;https://regions-test.2gis.com/v1/favorites&amp;quot;\n        data = {\n            &amp;quot;title&amp;quot;: title,\n            &amp;quot;lat&amp;quot;: LAT,\n            &amp;quot;lon&amp;quot;: LON\n        }\n    \n        response = requests.post(favorites_url, data=data, cookies={&amp;quot;token&amp;quot;: token})\n    \n        if is_valid_title(title):\n            assert response.status_code == 200, f&amp;quot;Expected 200, got {response.status_code} for {desc}&amp;quot;\n            json_data = response.json()\n            assert &amp;quot;id&amp;quot; in json_data and isinstance(json_data[&amp;quot;id&amp;quot;], int)\n            assert json_data[&amp;quot;title&amp;quot;] == data[&amp;quot;title&amp;quot;]\n            assert math.isclose(json_data[&amp;quot;lat&amp;quot;], data[&amp;quot;lat&amp;quot;], rel_tol=1e-6)\n            assert math.isclose(json_data[&amp;quot;lon&amp;quot;], data[&amp;quot;lon&amp;quot;], rel_tol=1e-6)\n            assert &amp;quot;created_at&amp;quot; in json_data\n        else:\n&amp;gt;           assert response.status_code == 400, f&amp;quot;Expected 400, got {response.status_code} for {desc}&amp;quot;\nE           AssertionError: Expected 400, got 200 for hebrew letters\nE           assert 200 == 400\nE            +  where 200 = &amp;lt;Response [200]&amp;gt;.status_code\n\ntests\\title_test.py:64: AssertionError\n&#34;}], &#34;tests/title_test.py::test_create_favorite_title[greek letters-\\u0391\\u03bb\\u03c6\\u03ac\\u03b2\\u03b7\\u03c4\\u03bf]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/title_test.py::test_create_favorite_title[greek letters-\\u0391\\u03bb\\u03c6\\u03ac\\u03b2\\u03b7\\u03c4\\u03bf]&#34;, &#34;duration&#34;: &#34;479 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/title_test.py::test_create_favorite_title[greek letters-\\u0391\\u03bb\\u03c6\\u03ac\\u03b2\\u03b7\\u03c4\\u03bf]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;479 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;desc = &amp;#x27;greek letters&amp;#x27;, title = &amp;#x27;\u0391\u03bb\u03c6\u03ac\u03b2\u03b7\u03c4\u03bf&amp;#x27;\n\n    @pytest.mark.parametrize(&amp;quot;desc, title&amp;quot;, test_pairs)\n    def test_create_favorite_title(desc, title):\n    #    print(f&amp;quot;Testing title ({desc}): {title}&amp;quot;)  # \u0417\u0434\u0435\u0441\u044c \u0432\u0438\u0434\u043d\u043e \u043b\u044e\u0431\u044b\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u044b\n        # \u041f\u043e\u043b\u0443\u0447\u0430\u0435\u043c \u0442\u043e\u043a\u0435\u043d\n        auth_url = &amp;quot;https://regions-test.2gis.com/v1/auth/tokens&amp;quot;\n        auth_response = requests.post(auth_url)\n        token = auth_response.cookies.get(&amp;quot;token&amp;quot;)\n        if not token:\n            raise Exception(&amp;quot;\u041d\u0435 \u0443\u0434\u0430\u043b\u043e\u0441\u044c \u043f\u043e\u043b\u0443\u0447\u0438\u0442\u044c \u0441\u0435\u0441\u0441\u0438\u043e\u043d\u043d\u044b\u0439 \u0442\u043e\u043a\u0435\u043d&amp;quot;)\n    \n        favorites_url = &amp;quot;https://regions-test.2gis.com/v1/favorites&amp;quot;\n        data = {\n            &amp;quot;title&amp;quot;: title,\n            &amp;quot;lat&amp;quot;: LAT,\n            &amp;quot;lon&amp;quot;: LON\n        }\n    \n        response = requests.post(favorites_url, data=data, cookies={&amp;quot;token&amp;quot;: token})\n    \n        if is_valid_title(title):\n            assert response.status_code == 200, f&amp;quot;Expected 200, got {response.status_code} for {desc}&amp;quot;\n            json_data = response.json()\n            assert &amp;quot;id&amp;quot; in json_data and isinstance(json_data[&amp;quot;id&amp;quot;], int)\n            assert json_data[&amp;quot;title&amp;quot;] == data[&amp;quot;title&amp;quot;]\n            assert math.isclose(json_data[&amp;quot;lat&amp;quot;], data[&amp;quot;lat&amp;quot;], rel_tol=1e-6)\n            assert math.isclose(json_data[&amp;quot;lon&amp;quot;], data[&amp;quot;lon&amp;quot;], rel_tol=1e-6)\n            assert &amp;quot;created_at&amp;quot; in json_data\n        else:\n&amp;gt;           assert response.status_code == 400, f&amp;quot;Expected 400, got {response.status_code} for {desc}&amp;quot;\nE           AssertionError: Expected 400, got 200 for greek letters\nE           assert 200 == 400\nE            +  where 200 = &amp;lt;Response [200]&amp;gt;.status_code\n\ntests\\title_test.py:64: AssertionError\n&#34;}], &#34;tests/title_test.py::test_create_favorite_title[georgian letters-\\u10e5\\u10d0\\u10e0\\u10d7\\u10e3\\u10da\\u10d8]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/title_test.py::test_create_favorite_title[georgian letters-\\u10e5\\u10d0\\u10e0\\u10d7\\u10e3\\u10da\\u10d8]&#34;, &#34;duration&#34;: &#34;449 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/title_test.py::test_create_favorite_title[georgian letters-\\u10e5\\u10d0\\u10e0\\u10d7\\u10e3\\u10da\\u10d8]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;449 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;desc = &amp;#x27;georgian letters&amp;#x27;, title = &amp;#x27;\u10e5\u10d0\u10e0\u10d7\u10e3\u10da\u10d8&amp;#x27;\n\n    @pytest.mark.parametrize(&amp;quot;desc, title&amp;quot;, test_pairs)\n    def test_create_favorite_title(desc, title):\n    #    print(f&amp;quot;Testing title ({desc}): {title}&amp;quot;)  # \u0417\u0434\u0435\u0441\u044c \u0432\u0438\u0434\u043d\u043e \u043b\u044e\u0431\u044b\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u044b\n        # \u041f\u043e\u043b\u0443\u0447\u0430\u0435\u043c \u0442\u043e\u043a\u0435\u043d\n        auth_url = &amp;quot;https://regions-test.2gis.com/v1/auth/tokens&amp;quot;\n        auth_response = requests.post(auth_url)\n        token = auth_response.cookies.get(&amp;quot;token&amp;quot;)\n        if not token:\n            raise Exception(&amp;quot;\u041d\u0435 \u0443\u0434\u0430\u043b\u043e\u0441\u044c \u043f\u043e\u043b\u0443\u0447\u0438\u0442\u044c \u0441\u0435\u0441\u0441\u0438\u043e\u043d\u043d\u044b\u0439 \u0442\u043e\u043a\u0435\u043d&amp;quot;)\n    \n        favorites_url = &amp;quot;https://regions-test.2gis.com/v1/favorites&amp;quot;\n        data = {\n            &amp;quot;title&amp;quot;: title,\n            &amp;quot;lat&amp;quot;: LAT,\n            &amp;quot;lon&amp;quot;: LON\n        }\n    \n        response = requests.post(favorites_url, data=data, cookies={&amp;quot;token&amp;quot;: token})\n    \n        if is_valid_title(title):\n            assert response.status_code == 200, f&amp;quot;Expected 200, got {response.status_code} for {desc}&amp;quot;\n            json_data = response.json()\n            assert &amp;quot;id&amp;quot; in json_data and isinstance(json_data[&amp;quot;id&amp;quot;], int)\n            assert json_data[&amp;quot;title&amp;quot;] == data[&amp;quot;title&amp;quot;]\n            assert math.isclose(json_data[&amp;quot;lat&amp;quot;], data[&amp;quot;lat&amp;quot;], rel_tol=1e-6)\n            assert math.isclose(json_data[&amp;quot;lon&amp;quot;], data[&amp;quot;lon&amp;quot;], rel_tol=1e-6)\n            assert &amp;quot;created_at&amp;quot; in json_data\n        else:\n&amp;gt;           assert response.status_code == 400, f&amp;quot;Expected 400, got {response.status_code} for {desc}&amp;quot;\nE           AssertionError: Expected 400, got 200 for georgian letters\nE           assert 200 == 400\nE            +  where 200 = &amp;lt;Response [200]&amp;gt;.status_code\n\ntests\\title_test.py:64: AssertionError\n&#34;}], &#34;tests/title_test.py::test_create_favorite_title[armenian letters-\\u0540\\u0561\\u0575\\u0565\\u0580\\u0565\\u0576]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/title_test.py::test_create_favorite_title[armenian letters-\\u0540\\u0561\\u0575\\u0565\\u0580\\u0565\\u0576]&#34;, &#34;duration&#34;: &#34;439 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/title_test.py::test_create_favorite_title[armenian letters-\\u0540\\u0561\\u0575\\u0565\\u0580\\u0565\\u0576]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;439 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;desc = &amp;#x27;armenian letters&amp;#x27;, title = &amp;#x27;\u0540\u0561\u0575\u0565\u0580\u0565\u0576&amp;#x27;\n\n    @pytest.mark.parametrize(&amp;quot;desc, title&amp;quot;, test_pairs)\n    def test_create_favorite_title(desc, title):\n    #    print(f&amp;quot;Testing title ({desc}): {title}&amp;quot;)  # \u0417\u0434\u0435\u0441\u044c \u0432\u0438\u0434\u043d\u043e \u043b\u044e\u0431\u044b\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u044b\n        # \u041f\u043e\u043b\u0443\u0447\u0430\u0435\u043c \u0442\u043e\u043a\u0435\u043d\n        auth_url = &amp;quot;https://regions-test.2gis.com/v1/auth/tokens&amp;quot;\n        auth_response = requests.post(auth_url)\n        token = auth_response.cookies.get(&amp;quot;token&amp;quot;)\n        if not token:\n            raise Exception(&amp;quot;\u041d\u0435 \u0443\u0434\u0430\u043b\u043e\u0441\u044c \u043f\u043e\u043b\u0443\u0447\u0438\u0442\u044c \u0441\u0435\u0441\u0441\u0438\u043e\u043d\u043d\u044b\u0439 \u0442\u043e\u043a\u0435\u043d&amp;quot;)\n    \n        favorites_url = &amp;quot;https://regions-test.2gis.com/v1/favorites&amp;quot;\n        data = {\n            &amp;quot;title&amp;quot;: title,\n            &amp;quot;lat&amp;quot;: LAT,\n            &amp;quot;lon&amp;quot;: LON\n        }\n    \n        response = requests.post(favorites_url, data=data, cookies={&amp;quot;token&amp;quot;: token})\n    \n        if is_valid_title(title):\n            assert response.status_code == 200, f&amp;quot;Expected 200, got {response.status_code} for {desc}&amp;quot;\n            json_data = response.json()\n            assert &amp;quot;id&amp;quot; in json_data and isinstance(json_data[&amp;quot;id&amp;quot;], int)\n            assert json_data[&amp;quot;title&amp;quot;] == data[&amp;quot;title&amp;quot;]\n            assert math.isclose(json_data[&amp;quot;lat&amp;quot;], data[&amp;quot;lat&amp;quot;], rel_tol=1e-6)\n            assert math.isclose(json_data[&amp;quot;lon&amp;quot;], data[&amp;quot;lon&amp;quot;], rel_tol=1e-6)\n            assert &amp;quot;created_at&amp;quot; in json_data\n        else:\n&amp;gt;           assert response.status_code == 400, f&amp;quot;Expected 400, got {response.status_code} for {desc}&amp;quot;\nE           AssertionError: Expected 400, got 200 for armenian letters\nE           assert 200 == 400\nE            +  where 200 = &amp;lt;Response [200]&amp;gt;.status_code\n\ntests\\title_test.py:64: AssertionError\n&#34;}], &#34;tests/title_test.py::test_create_favorite_title[thai letters-\\u0e17\\u0e14\\u0e2a\\u0e2d\\u0e1a\\u0e20\\u0e32\\u0e29\\u0e32\\u0e44\\u0e17\\u0e22]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/title_test.py::test_create_favorite_title[thai letters-\\u0e17\\u0e14\\u0e2a\\u0e2d\\u0e1a\\u0e20\\u0e32\\u0e29\\u0e32\\u0e44\\u0e17\\u0e22]&#34;, &#34;duration&#34;: &#34;452 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/title_test.py::test_create_favorite_title[thai letters-\\u0e17\\u0e14\\u0e2a\\u0e2d\\u0e1a\\u0e20\\u0e32\\u0e29\\u0e32\\u0e44\\u0e17\\u0e22]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;452 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;desc = &amp;#x27;thai letters&amp;#x27;, title = &amp;#x27;\u0e17\u0e14\u0e2a\u0e2d\u0e1a\u0e20\u0e32\u0e29\u0e32\u0e44\u0e17\u0e22&amp;#x27;\n\n    @pytest.mark.parametrize(&amp;quot;desc, title&amp;quot;, test_pairs)\n    def test_create_favorite_title(desc, title):\n    #    print(f&amp;quot;Testing title ({desc}): {title}&amp;quot;)  # \u0417\u0434\u0435\u0441\u044c \u0432\u0438\u0434\u043d\u043e \u043b\u044e\u0431\u044b\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u044b\n        # \u041f\u043e\u043b\u0443\u0447\u0430\u0435\u043c \u0442\u043e\u043a\u0435\u043d\n        auth_url = &amp;quot;https://regions-test.2gis.com/v1/auth/tokens&amp;quot;\n        auth_response = requests.post(auth_url)\n        token = auth_response.cookies.get(&amp;quot;token&amp;quot;)\n        if not token:\n            raise Exception(&amp;quot;\u041d\u0435 \u0443\u0434\u0430\u043b\u043e\u0441\u044c \u043f\u043e\u043b\u0443\u0447\u0438\u0442\u044c \u0441\u0435\u0441\u0441\u0438\u043e\u043d\u043d\u044b\u0439 \u0442\u043e\u043a\u0435\u043d&amp;quot;)\n    \n        favorites_url = &amp;quot;https://regions-test.2gis.com/v1/favorites&amp;quot;\n        data = {\n            &amp;quot;title&amp;quot;: title,\n            &amp;quot;lat&amp;quot;: LAT,\n            &amp;quot;lon&amp;quot;: LON\n        }\n    \n        response = requests.post(favorites_url, data=data, cookies={&amp;quot;token&amp;quot;: token})\n    \n        if is_valid_title(title):\n            assert response.status_code == 200, f&amp;quot;Expected 200, got {response.status_code} for {desc}&amp;quot;\n            json_data = response.json()\n            assert &amp;quot;id&amp;quot; in json_data and isinstance(json_data[&amp;quot;id&amp;quot;], int)\n            assert json_data[&amp;quot;title&amp;quot;] == data[&amp;quot;title&amp;quot;]\n            assert math.isclose(json_data[&amp;quot;lat&amp;quot;], data[&amp;quot;lat&amp;quot;], rel_tol=1e-6)\n            assert math.isclose(json_data[&amp;quot;lon&amp;quot;], data[&amp;quot;lon&amp;quot;], rel_tol=1e-6)\n            assert &amp;quot;created_at&amp;quot; in json_data\n        else:\n&amp;gt;           assert response.status_code == 400, f&amp;quot;Expected 400, got {response.status_code} for {desc}&amp;quot;\nE           AssertionError: Expected 400, got 200 for thai letters\nE           assert 200 == 400\nE            +  where 200 = &amp;lt;Response [200]&amp;gt;.status_code\n\ntests\\title_test.py:64: AssertionError\n&#34;}], &#34;tests/title_test.py::test_create_favorite_title[hindi letters-\\u0928\\u092e\\u0938\\u094d\\u0924\\u0947\\u0926\\u0941\\u0928\\u093f\\u092f\\u093e]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/title_test.py::test_create_favorite_title[hindi letters-\\u0928\\u092e\\u0938\\u094d\\u0924\\u0947\\u0926\\u0941\\u0928\\u093f\\u092f\\u093e]&#34;, &#34;duration&#34;: &#34;496 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/title_test.py::test_create_favorite_title[hindi letters-\\u0928\\u092e\\u0938\\u094d\\u0924\\u0947\\u0926\\u0941\\u0928\\u093f\\u092f\\u093e]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;496 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;desc = &amp;#x27;hindi letters&amp;#x27;, title = &amp;#x27;\u0928\u092e\u0938\u094d\u0924\u0947\u0926\u0941\u0928\u093f\u092f\u093e&amp;#x27;\n\n    @pytest.mark.parametrize(&amp;quot;desc, title&amp;quot;, test_pairs)\n    def test_create_favorite_title(desc, title):\n    #    print(f&amp;quot;Testing title ({desc}): {title}&amp;quot;)  # \u0417\u0434\u0435\u0441\u044c \u0432\u0438\u0434\u043d\u043e \u043b\u044e\u0431\u044b\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u044b\n        # \u041f\u043e\u043b\u0443\u0447\u0430\u0435\u043c \u0442\u043e\u043a\u0435\u043d\n        auth_url = &amp;quot;https://regions-test.2gis.com/v1/auth/tokens&amp;quot;\n        auth_response = requests.post(auth_url)\n        token = auth_response.cookies.get(&amp;quot;token&amp;quot;)\n        if not token:\n            raise Exception(&amp;quot;\u041d\u0435 \u0443\u0434\u0430\u043b\u043e\u0441\u044c \u043f\u043e\u043b\u0443\u0447\u0438\u0442\u044c \u0441\u0435\u0441\u0441\u0438\u043e\u043d\u043d\u044b\u0439 \u0442\u043e\u043a\u0435\u043d&amp;quot;)\n    \n        favorites_url = &amp;quot;https://regions-test.2gis.com/v1/favorites&amp;quot;\n        data = {\n            &amp;quot;title&amp;quot;: title,\n            &amp;quot;lat&amp;quot;: LAT,\n            &amp;quot;lon&amp;quot;: LON\n        }\n    \n        response = requests.post(favorites_url, data=data, cookies={&amp;quot;token&amp;quot;: token})\n    \n        if is_valid_title(title):\n            assert response.status_code == 200, f&amp;quot;Expected 200, got {response.status_code} for {desc}&amp;quot;\n            json_data = response.json()\n            assert &amp;quot;id&amp;quot; in json_data and isinstance(json_data[&amp;quot;id&amp;quot;], int)\n            assert json_data[&amp;quot;title&amp;quot;] == data[&amp;quot;title&amp;quot;]\n            assert math.isclose(json_data[&amp;quot;lat&amp;quot;], data[&amp;quot;lat&amp;quot;], rel_tol=1e-6)\n            assert math.isclose(json_data[&amp;quot;lon&amp;quot;], data[&amp;quot;lon&amp;quot;], rel_tol=1e-6)\n            assert &amp;quot;created_at&amp;quot; in json_data\n        else:\n&amp;gt;           assert response.status_code == 400, f&amp;quot;Expected 400, got {response.status_code} for {desc}&amp;quot;\nE           AssertionError: Expected 400, got 200 for hindi letters\nE           assert 200 == 400\nE            +  where 200 = &amp;lt;Response [200]&amp;gt;.status_code\n\ntests\\title_test.py:64: AssertionError\n&#34;}], &#34;tests/title_test.py::test_create_favorite_title[standard punctuation-My - , favorite place - is, i...]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/title_test.py::test_create_favorite_title[standard punctuation-My - , favorite place - is, i...]&#34;, &#34;duration&#34;: &#34;466 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/title_test.py::test_create_favorite_title[standard punctuation-My - , favorite place - is, i...]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;466 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/title_test.py::test_create_favorite_title[em dash punctuation-My - , favorite place - is, i...]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/title_test.py::test_create_favorite_title[em dash punctuation-My - , favorite place - is, i...]&#34;, &#34;duration&#34;: &#34;440 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/title_test.py::test_create_favorite_title[em dash punctuation-My - , favorite place - is, i...]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;440 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/title_test.py::test_create_favorite_title[en dash punctuation-My - , favorite place - is, i...]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/title_test.py::test_create_favorite_title[en dash punctuation-My - , favorite place - is, i...]&#34;, &#34;duration&#34;: &#34;505 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/title_test.py::test_create_favorite_title[en dash punctuation-My - , favorite place - is, i...]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;505 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/title_test.py::test_create_favorite_title[999 symbols-\\u043c\\u043e\\u0435\\u043b\\u044e\\u0431\\u0438\\u043c\\u043e\\u0435\\u043c\\u0435\\u0441\\u0442\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e...]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/title_test.py::test_create_favorite_title[999 symbols-\\u043c\\u043e\\u0435\\u043b\\u044e\\u0431\\u0438\\u043c\\u043e\\u0435\\u043c\\u0435\\u0441\\u0442\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e...]&#34;, &#34;duration&#34;: &#34;446 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/title_test.py::test_create_favorite_title[999 symbols-\\u043c\\u043e\\u0435\\u043b\\u044e\\u0431\\u0438\\u043c\\u043e\\u0435\\u043c\\u0435\\u0441\\u0442\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e...]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;446 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/title_test.py::test_create_favorite_title[1000 symbols-\\u043c\\u043e\\u0435\\u043b\\u044e\\u0431\\u0438\\u043c\\u043e\\u0435\\u043c\\u0435\\u0441\\u0442\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e...]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/title_test.py::test_create_favorite_title[1000 symbols-\\u043c\\u043e\\u0435\\u043b\\u044e\\u0431\\u0438\\u043c\\u043e\\u0435\\u043c\\u0435\\u0441\\u0442\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e...]&#34;, &#34;duration&#34;: &#34;450 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/title_test.py::test_create_favorite_title[1000 symbols-\\u043c\\u043e\\u0435\\u043b\\u044e\\u0431\\u0438\\u043c\\u043e\\u0435\\u043c\\u0435\\u0441\\u0442\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e...]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;450 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;desc = &amp;#x27;1000 symbols&amp;#x27;\ntitle = &amp;#x27;\u043c\u043e\u0435\u043b\u044e\u0431\u0438\u043c\u043e\u0435\u043c\u0435\u0441\u0442\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e...\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e\u043e.&amp;#x27;\n\n    @pytest.mark.parametrize(&amp;quot;desc, title&amp;quot;, test_pairs)\n    def test_create_favorite_title(desc, title):\n    #    print(f&amp;quot;Testing title ({desc}): {title}&amp;quot;)  # \u0417\u0434\u0435\u0441\u044c \u0432\u0438\u0434\u043d\u043e \u043b\u044e\u0431\u044b\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u044b\n        # \u041f\u043e\u043b\u0443\u0447\u0430\u0435\u043c \u0442\u043e\u043a\u0435\u043d\n        auth_url = &amp;quot;https://regions-test.2gis.com/v1/auth/tokens&amp;quot;\n        auth_response = requests.post(auth_url)\n        token = auth_response.cookies.get(&amp;quot;token&amp;quot;)\n        if not token:\n            raise Exception(&amp;quot;\u041d\u0435 \u0443\u0434\u0430\u043b\u043e\u0441\u044c \u043f\u043e\u043b\u0443\u0447\u0438\u0442\u044c \u0441\u0435\u0441\u0441\u0438\u043e\u043d\u043d\u044b\u0439 \u0442\u043e\u043a\u0435\u043d&amp;quot;)\n    \n        favorites_url = &amp;quot;https://regions-test.2gis.com/v1/favorites&amp;quot;\n        data = {\n            &amp;quot;title&amp;quot;: title,\n            &amp;quot;lat&amp;quot;: LAT,\n            &amp;quot;lon&amp;quot;: LON\n        }\n    \n        response = requests.post(favorites_url, data=data, cookies={&amp;quot;token&amp;quot;: token})\n    \n        if is_valid_title(title):\n            assert response.status_code == 200, f&amp;quot;Expected 200, got {response.status_code} for {desc}&amp;quot;\n            json_data = response.json()\n            assert &amp;quot;id&amp;quot; in json_data and isinstance(json_data[&amp;quot;id&amp;quot;], int)\n            assert json_data[&amp;quot;title&amp;quot;] == data[&amp;quot;title&amp;quot;]\n            assert math.isclose(json_data[&amp;quot;lat&amp;quot;], data[&amp;quot;lat&amp;quot;], rel_tol=1e-6)\n            assert math.isclose(json_data[&amp;quot;lon&amp;quot;], data[&amp;quot;lon&amp;quot;], rel_tol=1e-6)\n            assert &amp;quot;created_at&amp;quot; in json_data\n        else:\n&amp;gt;           assert response.status_code == 400, f&amp;quot;Expected 400, got {response.status_code} for {desc}&amp;quot;\nE           AssertionError: Expected 400, got 200 for 1000 symbols\nE           assert 200 == 400\nE            +  where 200 = &amp;lt;Response [200]&amp;gt;.status_code\n\ntests\\title_test.py:64: AssertionError\n&#34;}], &#34;tests/title_test.py::test_create_favorite_title[1001 symbols-\\u043c\\u043e\\u0435\\u043b\\u044e\\u0431\\u0438\\u043c\\u043e\\u0435\\u043c\\u0435\\u0441\\u0442\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e...]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/title_test.py::test_create_favorite_title[1001 symbols-\\u043c\\u043e\\u0435\\u043b\\u044e\\u0431\\u0438\\u043c\\u043e\\u0435\\u043c\\u0435\\u0441\\u0442\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e...]&#34;, &#34;duration&#34;: &#34;517 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/title_test.py::test_create_favorite_title[1001 symbols-\\u043c\\u043e\\u0435\\u043b\\u044e\\u0431\\u0438\\u043c\\u043e\\u0435\\u043c\\u0435\\u0441\\u0442\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e\\u043e...]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;517 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/title_test.py::test_create_favorite_title[null title-None]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/title_test.py::test_create_favorite_title[null title-None]&#34;, &#34;duration&#34;: &#34;492 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/title_test.py::test_create_favorite_title[null title-None]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;492 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/title_test.py::test_create_favorite_title[only spaces-          ]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/title_test.py::test_create_favorite_title[only spaces-          ]&#34;, &#34;duration&#34;: &#34;441 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/title_test.py::test_create_favorite_title[only spaces-          ]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;441 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;desc = &amp;#x27;only spaces&amp;#x27;, title = &amp;#x27;          &amp;#x27;\n\n    @pytest.mark.parametrize(&amp;quot;desc, title&amp;quot;, test_pairs)\n    def test_create_favorite_title(desc, title):\n    #    print(f&amp;quot;Testing title ({desc}): {title}&amp;quot;)  # \u0417\u0434\u0435\u0441\u044c \u0432\u0438\u0434\u043d\u043e \u043b\u044e\u0431\u044b\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u044b\n        # \u041f\u043e\u043b\u0443\u0447\u0430\u0435\u043c \u0442\u043e\u043a\u0435\u043d\n        auth_url = &amp;quot;https://regions-test.2gis.com/v1/auth/tokens&amp;quot;\n        auth_response = requests.post(auth_url)\n        token = auth_response.cookies.get(&amp;quot;token&amp;quot;)\n        if not token:\n            raise Exception(&amp;quot;\u041d\u0435 \u0443\u0434\u0430\u043b\u043e\u0441\u044c \u043f\u043e\u043b\u0443\u0447\u0438\u0442\u044c \u0441\u0435\u0441\u0441\u0438\u043e\u043d\u043d\u044b\u0439 \u0442\u043e\u043a\u0435\u043d&amp;quot;)\n    \n        favorites_url = &amp;quot;https://regions-test.2gis.com/v1/favorites&amp;quot;\n        data = {\n            &amp;quot;title&amp;quot;: title,\n            &amp;quot;lat&amp;quot;: LAT,\n            &amp;quot;lon&amp;quot;: LON\n        }\n    \n        response = requests.post(favorites_url, data=data, cookies={&amp;quot;token&amp;quot;: token})\n    \n        if is_valid_title(title):\n            assert response.status_code == 200, f&amp;quot;Expected 200, got {response.status_code} for {desc}&amp;quot;\n            json_data = response.json()\n            assert &amp;quot;id&amp;quot; in json_data and isinstance(json_data[&amp;quot;id&amp;quot;], int)\n            assert json_data[&amp;quot;title&amp;quot;] == data[&amp;quot;title&amp;quot;]\n            assert math.isclose(json_data[&amp;quot;lat&amp;quot;], data[&amp;quot;lat&amp;quot;], rel_tol=1e-6)\n            assert math.isclose(json_data[&amp;quot;lon&amp;quot;], data[&amp;quot;lon&amp;quot;], rel_tol=1e-6)\n            assert &amp;quot;created_at&amp;quot; in json_data\n        else:\n&amp;gt;           assert response.status_code == 400, f&amp;quot;Expected 400, got {response.status_code} for {desc}&amp;quot;\nE           AssertionError: Expected 400, got 200 for only spaces\nE           assert 200 == 400\nE            +  where 200 = &amp;lt;Response [200]&amp;gt;.status_code\n\ntests\\title_test.py:64: AssertionError\n&#34;}]}, &#34;renderCollapsed&#34;: [&#34;passed&#34;], &#34;initialSort&#34;: &#34;result&#34;, &#34;title&#34;: &#34;report.html&#34;}"></div>
+    <script>
+      (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+const { getCollapsedCategory, setCollapsedIds } = require('./storage.js')
+
+class DataManager {
+    setManager(data) {
+        const collapsedCategories = [...getCollapsedCategory(data.renderCollapsed)]
+        const collapsedIds = []
+        const tests = Object.values(data.tests).flat().map((test, index) => {
+            const collapsed = collapsedCategories.includes(test.result.toLowerCase())
+            const id = `test_${index}`
+            if (collapsed) {
+                collapsedIds.push(id)
+            }
+            return {
+                ...test,
+                id,
+                collapsed,
+            }
+        })
+        const dataBlob = { ...data, tests }
+        this.data = { ...dataBlob }
+        this.renderData = { ...dataBlob }
+        setCollapsedIds(collapsedIds)
+    }
+
+    get allData() {
+        return { ...this.data }
+    }
+
+    resetRender() {
+        this.renderData = { ...this.data }
+    }
+
+    setRender(data) {
+        this.renderData.tests = [...data]
+    }
+
+    toggleCollapsedItem(id) {
+        this.renderData.tests = this.renderData.tests.map((test) =>
+            test.id === id ? { ...test, collapsed: !test.collapsed } : test,
+        )
+    }
+
+    set allCollapsed(collapsed) {
+        this.renderData = { ...this.renderData, tests: [...this.renderData.tests.map((test) => (
+            { ...test, collapsed }
+        ))] }
+    }
+
+    get testSubset() {
+        return [...this.renderData.tests]
+    }
+
+    get environment() {
+        return this.renderData.environment
+    }
+
+    get initialSort() {
+        return this.data.initialSort
+    }
+}
+
+module.exports = {
+    manager: new DataManager(),
+}
+
+},{"./storage.js":8}],2:[function(require,module,exports){
+const mediaViewer = require('./mediaviewer.js')
+const templateEnvRow = document.getElementById('template_environment_row')
+const templateResult = document.getElementById('template_results-table__tbody')
+
+function htmlToElements(html) {
+    const temp = document.createElement('template')
+    temp.innerHTML = html
+    return temp.content.childNodes
+}
+
+const find = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return elem.querySelector(selector)
+}
+
+const findAll = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return [...elem.querySelectorAll(selector)]
+}
+
+const dom = {
+    getStaticRow: (key, value) => {
+        const envRow = templateEnvRow.content.cloneNode(true)
+        const isObj = typeof value === 'object' && value !== null
+        const values = isObj ? Object.keys(value).map((k) => `${k}: ${value[k]}`) : null
+
+        const valuesElement = htmlToElements(
+            values ? `<ul>${values.map((val) => `<li>${val}</li>`).join('')}<ul>` : `<div>${value}</div>`)[0]
+        const td = findAll('td', envRow)
+        td[0].textContent = key
+        td[1].appendChild(valuesElement)
+
+        return envRow
+    },
+    getResultTBody: ({ testId, id, log, extras, resultsTableRow, tableHtml, result, collapsed }) => {
+        const resultBody = templateResult.content.cloneNode(true)
+        resultBody.querySelector('tbody').classList.add(result.toLowerCase())
+        resultBody.querySelector('tbody').id = testId
+        resultBody.querySelector('.collapsible').dataset.id = id
+
+        resultsTableRow.forEach((html) => {
+            const t = document.createElement('template')
+            t.innerHTML = html
+            resultBody.querySelector('.collapsible').appendChild(t.content)
+        })
+
+        if (log) {
+            // Wrap lines starting with "E" with span.error to color those lines red
+            const wrappedLog = log.replace(/^E.*$/gm, (match) => `<span class="error">${match}</span>`)
+            resultBody.querySelector('.log').innerHTML = wrappedLog
+        } else {
+            resultBody.querySelector('.log').remove()
+        }
+
+        if (collapsed) {
+            resultBody.querySelector('.collapsible > td')?.classList.add('collapsed')
+            resultBody.querySelector('.extras-row').classList.add('hidden')
+        } else {
+            resultBody.querySelector('.collapsible > td')?.classList.remove('collapsed')
+        }
+
+        const media = []
+        extras?.forEach(({ name, format_type, content }) => {
+            if (['image', 'video'].includes(format_type)) {
+                media.push({ path: content, name, format_type })
+            }
+
+            if (format_type === 'html') {
+                resultBody.querySelector('.extraHTML').insertAdjacentHTML('beforeend', `<div>${content}</div>`)
+            }
+        })
+        mediaViewer.setup(resultBody, media)
+
+        // Add custom html from the pytest_html_results_table_html hook
+        tableHtml?.forEach((item) => {
+            resultBody.querySelector('td[class="extra"]').insertAdjacentHTML('beforeend', item)
+        })
+
+        return resultBody
+    },
+}
+
+module.exports = {
+    dom,
+    htmlToElements,
+    find,
+    findAll,
+}
+
+},{"./mediaviewer.js":6}],3:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const storageModule = require('./storage.js')
+
+const getFilteredSubSet = (filter) =>
+    manager.allData.tests.filter(({ result }) => filter.includes(result.toLowerCase()))
+
+const doInitFilter = () => {
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+}
+
+const doFilter = (type, show) => {
+    if (show) {
+        storageModule.showCategory(type)
+    } else {
+        storageModule.hideCategory(type)
+    }
+
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+
+    const sortColumn = storageModule.getSort()
+    doSort(sortColumn, true)
+}
+
+module.exports = {
+    doFilter,
+    doInitFilter,
+}
+
+},{"./datamanager.js":1,"./sort.js":7,"./storage.js":8}],4:[function(require,module,exports){
+const { redraw, bindEvents, renderStatic } = require('./main.js')
+const { doInitFilter } = require('./filter.js')
+const { doInitSort } = require('./sort.js')
+const { manager } = require('./datamanager.js')
+const data = JSON.parse(document.getElementById('data-container').dataset.jsonblob)
+
+function init() {
+    manager.setManager(data)
+    doInitFilter()
+    doInitSort()
+    renderStatic()
+    redraw()
+    bindEvents()
+}
+
+init()
+
+},{"./datamanager.js":1,"./filter.js":3,"./main.js":5,"./sort.js":7}],5:[function(require,module,exports){
+const { dom, find, findAll } = require('./dom.js')
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const { doFilter } = require('./filter.js')
+const {
+    getVisible,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    getSortDirection,
+    possibleFilters,
+} = require('./storage.js')
+
+const removeChildren = (node) => {
+    while (node.firstChild) {
+        node.removeChild(node.firstChild)
+    }
+}
+
+const renderStatic = () => {
+    const renderEnvironmentTable = () => {
+        const environment = manager.environment
+        const rows = Object.keys(environment).map((key) => dom.getStaticRow(key, environment[key]))
+        const table = document.getElementById('environment')
+        removeChildren(table)
+        rows.forEach((row) => table.appendChild(row))
+    }
+    renderEnvironmentTable()
+}
+
+const addItemToggleListener = (elem) => {
+    elem.addEventListener('click', ({ target }) => {
+        const id = target.parentElement.dataset.id
+        manager.toggleCollapsedItem(id)
+
+        const collapsedIds = getCollapsedIds()
+        if (collapsedIds.includes(id)) {
+            const updated = collapsedIds.filter((item) => item !== id)
+            setCollapsedIds(updated)
+        } else {
+            collapsedIds.push(id)
+            setCollapsedIds(collapsedIds)
+        }
+        redraw()
+    })
+}
+
+const renderContent = (tests) => {
+    const sortAttr = getSort(manager.initialSort)
+    const sortAsc = JSON.parse(getSortDirection())
+    const rows = tests.map(dom.getResultTBody)
+    const table = document.getElementById('results-table')
+    const tableHeader = document.getElementById('results-table-head')
+
+    const newTable = document.createElement('table')
+    newTable.id = 'results-table'
+
+    // remove all sorting classes and set the relevant
+    findAll('.sortable', tableHeader).forEach((elem) => elem.classList.remove('asc', 'desc'))
+    tableHeader.querySelector(`.sortable[data-column-type="${sortAttr}"]`)?.classList.add(sortAsc ? 'desc' : 'asc')
+    newTable.appendChild(tableHeader)
+
+    if (!rows.length) {
+        const emptyTable = document.getElementById('template_results-table__body--empty').content.cloneNode(true)
+        newTable.appendChild(emptyTable)
+    } else {
+        rows.forEach((row) => {
+            if (!!row) {
+                findAll('.collapsible td:not(.col-links', row).forEach(addItemToggleListener)
+                find('.logexpander', row).addEventListener('click',
+                    (evt) => evt.target.parentNode.classList.toggle('expanded'),
+                )
+                newTable.appendChild(row)
+            }
+        })
+    }
+
+    table.replaceWith(newTable)
+}
+
+const renderDerived = () => {
+    const currentFilter = getVisible()
+    possibleFilters.forEach((result) => {
+        const input = document.querySelector(`input[data-test-result="${result}"]`)
+        input.checked = currentFilter.includes(result)
+    })
+}
+
+const bindEvents = () => {
+    const filterColumn = (evt) => {
+        const { target: element } = evt
+        const { testResult } = element.dataset
+
+        doFilter(testResult, element.checked)
+        const collapsedIds = getCollapsedIds()
+        const updated = manager.renderData.tests.map((test) => {
+            return {
+                ...test,
+                collapsed: collapsedIds.includes(test.id),
+            }
+        })
+        manager.setRender(updated)
+        redraw()
+    }
+
+    const header = document.getElementById('environment-header')
+    header.addEventListener('click', () => {
+        const table = document.getElementById('environment')
+        table.classList.toggle('hidden')
+        header.classList.toggle('collapsed')
+    })
+
+    findAll('input[name="filter_checkbox"]').forEach((elem) => {
+        elem.addEventListener('click', filterColumn)
+    })
+
+    findAll('.sortable').forEach((elem) => {
+        elem.addEventListener('click', (evt) => {
+            const { target: element } = evt
+            const { columnType } = element.dataset
+            doSort(columnType)
+            redraw()
+        })
+    })
+
+    document.getElementById('show_all_details').addEventListener('click', () => {
+        manager.allCollapsed = false
+        setCollapsedIds([])
+        redraw()
+    })
+    document.getElementById('hide_all_details').addEventListener('click', () => {
+        manager.allCollapsed = true
+        const allIds = manager.renderData.tests.map((test) => test.id)
+        setCollapsedIds(allIds)
+        redraw()
+    })
+}
+
+const redraw = () => {
+    const { testSubset } = manager
+
+    renderContent(testSubset)
+    renderDerived()
+}
+
+module.exports = {
+    redraw,
+    bindEvents,
+    renderStatic,
+}
+
+},{"./datamanager.js":1,"./dom.js":2,"./filter.js":3,"./sort.js":7,"./storage.js":8}],6:[function(require,module,exports){
+class MediaViewer {
+    constructor(assets) {
+        this.assets = assets
+        this.index = 0
+    }
+
+    nextActive() {
+        this.index = this.index === this.assets.length - 1 ? 0 : this.index + 1
+        return [this.activeFile, this.index]
+    }
+
+    prevActive() {
+        this.index = this.index === 0 ? this.assets.length - 1 : this.index -1
+        return [this.activeFile, this.index]
+    }
+
+    get currentIndex() {
+        return this.index
+    }
+
+    get activeFile() {
+        return this.assets[this.index]
+    }
+}
+
+
+const setup = (resultBody, assets) => {
+    if (!assets.length) {
+        resultBody.querySelector('.media').classList.add('hidden')
+        return
+    }
+
+    const mediaViewer = new MediaViewer(assets)
+    const container = resultBody.querySelector('.media-container')
+    const leftArrow = resultBody.querySelector('.media-container__nav--left')
+    const rightArrow = resultBody.querySelector('.media-container__nav--right')
+    const mediaName = resultBody.querySelector('.media__name')
+    const counter = resultBody.querySelector('.media__counter')
+    const imageEl = resultBody.querySelector('img')
+    const sourceEl = resultBody.querySelector('source')
+    const videoEl = resultBody.querySelector('video')
+
+    const setImg = (media, index) => {
+        if (media?.format_type === 'image') {
+            imageEl.src = media.path
+
+            imageEl.classList.remove('hidden')
+            videoEl.classList.add('hidden')
+        } else if (media?.format_type === 'video') {
+            sourceEl.src = media.path
+
+            videoEl.classList.remove('hidden')
+            imageEl.classList.add('hidden')
+        }
+
+        mediaName.innerText = media?.name
+        counter.innerText = `${index + 1} / ${assets.length}`
+    }
+    setImg(mediaViewer.activeFile, mediaViewer.currentIndex)
+
+    const moveLeft = () => {
+        const [media, index] = mediaViewer.prevActive()
+        setImg(media, index)
+    }
+    const doRight = () => {
+        const [media, index] = mediaViewer.nextActive()
+        setImg(media, index)
+    }
+    const openImg = () => {
+        window.open(mediaViewer.activeFile.path, '_blank')
+    }
+    if (assets.length === 1) {
+        container.classList.add('media-container--fullscreen')
+    } else {
+        leftArrow.addEventListener('click', moveLeft)
+        rightArrow.addEventListener('click', doRight)
+    }
+    imageEl.addEventListener('click', openImg)
+}
+
+module.exports = {
+    setup,
+}
+
+},{}],7:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const storageModule = require('./storage.js')
+
+const genericSort = (list, key, ascending, customOrder) => {
+    let sorted
+    if (customOrder) {
+        sorted = list.sort((a, b) => {
+            const aValue = a.result.toLowerCase()
+            const bValue = b.result.toLowerCase()
+
+            const aIndex = customOrder.findIndex((item) => item.toLowerCase() === aValue)
+            const bIndex = customOrder.findIndex((item) => item.toLowerCase() === bValue)
+
+            // Compare the indices to determine the sort order
+            return aIndex - bIndex
+        })
+    } else {
+        sorted = list.sort((a, b) => a[key] === b[key] ? 0 : a[key] > b[key] ? 1 : -1)
+    }
+
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const durationSort = (list, ascending) => {
+    const parseDuration = (duration) => {
+        if (duration.includes(':')) {
+            // If it's in the format "HH:mm:ss"
+            const [hours, minutes, seconds] = duration.split(':').map(Number)
+            return (hours * 3600 + minutes * 60 + seconds) * 1000
+        } else {
+            // If it's in the format "nnn ms"
+            return parseInt(duration)
+        }
+    }
+    const sorted = list.sort((a, b) => parseDuration(a['duration']) - parseDuration(b['duration']))
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const doInitSort = () => {
+    const type = storageModule.getSort(manager.initialSort)
+    const ascending = storageModule.getSortDirection()
+    const list = manager.testSubset
+    const initialOrder = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed', 'Skipped', 'Passed']
+
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    if (type?.toLowerCase() === 'original') {
+        manager.setRender(list)
+    } else {
+        let sortedList
+        switch (type) {
+        case 'duration':
+            sortedList = durationSort(list, ascending)
+            break
+        case 'result':
+            sortedList = genericSort(list, type, ascending, initialOrder)
+            break
+        default:
+            sortedList = genericSort(list, type, ascending)
+            break
+        }
+        manager.setRender(sortedList)
+    }
+}
+
+const doSort = (type, skipDirection) => {
+    const newSortType = storageModule.getSort(manager.initialSort) !== type
+    const currentAsc = storageModule.getSortDirection()
+    let ascending
+    if (skipDirection) {
+        ascending = currentAsc
+    } else {
+        ascending = newSortType ? false : !currentAsc
+    }
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    const list = manager.testSubset
+    const sortedList = type === 'duration' ? durationSort(list, ascending) : genericSort(list, type, ascending)
+    manager.setRender(sortedList)
+}
+
+module.exports = {
+    doInitSort,
+    doSort,
+}
+
+},{"./datamanager.js":1,"./storage.js":8}],8:[function(require,module,exports){
+const possibleFilters = [
+    'passed',
+    'skipped',
+    'failed',
+    'error',
+    'xfailed',
+    'xpassed',
+    'rerun',
+]
+
+const getVisible = () => {
+    const url = new URL(window.location.href)
+    const settings = new URLSearchParams(url.search).get('visible')
+    const lower = (item) => {
+        const lowerItem = item.toLowerCase()
+        if (possibleFilters.includes(lowerItem)) {
+            return lowerItem
+        }
+        return null
+    }
+    return settings === null ?
+        possibleFilters :
+        [...new Set(settings?.split(',').map(lower).filter((item) => item))]
+}
+
+const hideCategory = (categoryToHide) => {
+    const url = new URL(window.location.href)
+    const visibleParams = new URLSearchParams(url.search).get('visible')
+    const currentVisible = visibleParams ? visibleParams.split(',') : [...possibleFilters]
+    const settings = [...new Set(currentVisible)].filter((f) => f !== categoryToHide).join(',')
+
+    url.searchParams.set('visible', settings)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const showCategory = (categoryToShow) => {
+    if (typeof window === 'undefined') {
+        return
+    }
+    const url = new URL(window.location.href)
+    const currentVisible = new URLSearchParams(url.search).get('visible')?.split(',').filter(Boolean) ||
+        [...possibleFilters]
+    const settings = [...new Set([categoryToShow, ...currentVisible])]
+    const noFilter = possibleFilters.length === settings.length || !settings.length
+
+    noFilter ? url.searchParams.delete('visible') : url.searchParams.set('visible', settings.join(','))
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getSort = (initialSort) => {
+    const url = new URL(window.location.href)
+    let sort = new URLSearchParams(url.search).get('sort')
+    if (!sort) {
+        sort = initialSort || 'result'
+    }
+    return sort
+}
+
+const setSort = (type) => {
+    const url = new URL(window.location.href)
+    url.searchParams.set('sort', type)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getCollapsedCategory = (renderCollapsed) => {
+    let categories
+    if (typeof window !== 'undefined') {
+        const url = new URL(window.location.href)
+        const collapsedItems = new URLSearchParams(url.search).get('collapsed')
+        switch (true) {
+        case !renderCollapsed && collapsedItems === null:
+            categories = ['passed']
+            break
+        case collapsedItems?.length === 0 || /^["']{2}$/.test(collapsedItems):
+            categories = []
+            break
+        case /^all$/.test(collapsedItems) || collapsedItems === null && /^all$/.test(renderCollapsed):
+            categories = [...possibleFilters]
+            break
+        default:
+            categories = collapsedItems?.split(',').map((item) => item.toLowerCase()) || renderCollapsed
+            break
+        }
+    } else {
+        categories = []
+    }
+    return categories
+}
+
+const getSortDirection = () => JSON.parse(sessionStorage.getItem('sortAsc')) || false
+const setSortDirection = (ascending) => sessionStorage.setItem('sortAsc', ascending)
+
+const getCollapsedIds = () => JSON.parse(sessionStorage.getItem('collapsedIds')) || []
+const setCollapsedIds = (list) => sessionStorage.setItem('collapsedIds', JSON.stringify(list))
+
+module.exports = {
+    getVisible,
+    hideCategory,
+    showCategory,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    setSort,
+    getSortDirection,
+    setSortDirection,
+    getCollapsedCategory,
+    possibleFilters,
+}
+
+},{}]},{},[4]);
+    </script>
+  </footer>
+</html>
