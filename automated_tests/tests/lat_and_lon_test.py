@@ -1,4 +1,4 @@
-# test_favorites.py
+# автотест для тест кейса: TC_FAV_001
 import pytest
 import requests
 import json

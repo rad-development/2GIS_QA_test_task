@@ -1,4 +1,4 @@
-# test_favorites_color.py
+# автотест для тест кейса: TC_FAV_003
 import pytest
 import requests
 import json

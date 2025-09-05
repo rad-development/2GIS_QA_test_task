@@ -1,4 +1,4 @@
-# test_favorites_token_real_expired.py
+# автотест для тест кейсов: TC_AUTH_001, TC_AUTH_002, TC_AUTH_003, TC_AUTH_004, TC_AUTH_005
 import pytest
 import requests
 import random

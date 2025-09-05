@@ -1,4 +1,4 @@
-# test_favorites_required_fields.py
+# автотест для тест кейса: TC_FAV_004
 import pytest
 import requests
 import random
