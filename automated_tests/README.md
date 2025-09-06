@@ -23,7 +23,7 @@ pytest-html==4.1.1
 Для запуска всех автотестов и генерации HTML-отчёта используется команда:
 
 ```bash
-pytest --html=report.html
+pytest --html=report.html --self-contained-html
 ```
 
 Что делает команда:
