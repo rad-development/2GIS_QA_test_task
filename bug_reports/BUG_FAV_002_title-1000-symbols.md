@@ -12,9 +12,9 @@
 ### 🛠 Окружение
 
 - API: [https://regionstest.2gis.com/v1/favorites](https://regionstest.2gis.com/v1/favorites)  
-- Версия API: v1
-- ОС: Windows 10 
-- Инструмент: Postman  
+- Версия API: v1  
+- ОС: Windows 10  
+- Инструмент: Postman / Python (requests)   
 
 ---
 
